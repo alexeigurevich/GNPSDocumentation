@@ -523,7 +523,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../featurebasedmolecularnetworking-with-mzmine2.md" title="MZmine2 Documentation" class="md-nav__link">
+    <a href="../featurebasedmolecularnetworking-with-mzmine2/" title="MZmine2 Documentation" class="md-nav__link">
       MZmine2 Documentation
     </a>
   </li>
@@ -1152,8 +1152,8 @@
                   <h1>XCMS3 Documentation</h1>
                 
                 <h2 id="introduction">Introduction</h2>
-<p>The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on <a href="http://gnps.ucsd.edu">GNPS</a>. The tool supported are: <a href="featurebasedmolecularnetworking-with-mzmine2">MZmine2</a>, <a href="featurebasedmolecularnetworking-with-OpenMS">OpenMS</a>, <a href="featurebasedmolecularnetworking-with-ms-dial">MS-DIAL</a>, <a href="https://github.com/sneumann/xcms">XCMS</a>, and <a href="featurebasedmolecularnetworking-with-metaboscape">MetaboScape</a>, <a href="featurebasedmolecularnetworking-with-XCMS3">XCMS</a>.</p>
-<p>The main documentation for Feature-Based Molecular Networking <a href="featurebasedmolecularnetworking">can be accessed here:</a></p>
+<p>The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on <a href="http://gnps.ucsd.edu">GNPS</a>. The tools supported are: <a href="../featurebasedmolecularnetworking-with-mzmine2/">MZmine2</a>, <a href="featurebasedmolecularnetworking-with-OpenMS.md">OpenMS</a>, <a href="../featurebasedmolecularnetworking-with-ms-dial/">MS-DIAL</a>, <a href="../featurebasedmolecularnetworking-with-metaboscape/">MetaboScape</a>, and <a href="featurebasedmolecularnetworking-with-XCMS3.md">XCMS</a>.</p>
+<p>The main documentation for Feature-Based Molecular Networking <a href="../featurebasedmolecularnetworking/">can be accessed here:</a></p>
 <p>Below follows a description on how to use XCMS3 with the FBMN workflow in GNPS.</p>
 <h2 id="mass-spectrometry-processing-with-xcms3">Mass spectrometry processing with XCMS3</h2>
 <h3 id="installation">Installation</h3>
@@ -1171,10 +1171,10 @@
 <p>Please consult these resources for more details on XCMS3 processing:</p>
 <ul>
 <li>The official <a href="add link">XCMS3 tutorial</a>.</li>
-<li>The video tutorial about <a href="tutorials/americangutxcms3/">XCMS3 processing for Feature Based Molecular Networking</a>.</li>
+<li>The video tutorial about <a href="tutorials/americangutxcms3.md">XCMS3 processing for Feature Based Molecular Networking</a>.</li>
 </ul>
 <h4 id="1-convert-your-lc-msms-data-to-an-open-format">1. Convert your LC-MS/MS Data to an Open Format</h4>
-<p>XCMS3 accepts different input formats. Note that we recommand to first convert your files to the mzML format before using XCMS3 for processing. <a href="https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/">See the documentation here</a>.</p>
+<p>XCMS3 accepts different input formats. Note that we recommand to first convert your files to the mzML format before using XCMS3 for processing. <a href="../fileconversion/">See the documentation here</a>.</p>
 <h4 id="2-processing-steps-with-xcms3">2. Processing Steps with XCMS3</h4>
 <ol>
 <li>Import data</li>
@@ -1191,19 +1191,18 @@
 <h3 id="perform-the-feature-based-molecular-networking-on-gnps">Perform the Feature-Based Molecular Networking on GNPS</h3>
 <p>The files exported from XCMS3 can be uploaded to the GNPS web-platform and a Feature-Based Molecular Networking job can be launched.</p>
 <p>See that documentation for [the FTP upload] (https://ccms-ucsd.github.io/GNPSDocumentation/fileupload/) and prepare your FBMN job <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">directly on GNPS</a> (you must be logged in first).</p>
-<p>Note that you can upload a metadata table with your job. <a href="networking#metadata">See documentation</a>. </p>
-<p><strong>IMPORTANT FOR METADATA WITH XCMS3</strong>: the "file name" in the metadata files for FBMN with XCMS3 should not contain the file extension (ex: "sample1.mzML" must be "sample1").</p>
-<p>More information on the Feature Based Molecular Networking workflow on GNPS can be obtained at <a href="featurebasedmolecularnetworking">this documentation page</a>.</p>
+<p>Note that you can upload a metadata table with your job. <a href="../networking/#metadata">See documentation</a>. </p>
+<p>More information on the Feature Based Molecular Networking workflow on GNPS can be obtained at <a href="../featurebasedmolecularnetworking/">this documentation page</a>.</p>
 <h3 id="representative-files-and-job">Representative files and job</h3>
-<p>Test files are accessible <a href="https://github.com/CCMS-UCSD/GNPSDocumentation/tree/master/docs/tutorials/AG_tutorial_files">here</a>:</p>
+<p>Test files are accessible <a href="tutorials/AG_tutorial_files/">here</a>:</p>
 <ol>
-<li>Feature Table from above</li>
-<li>MGF for MS/MS from above</li>
-<li>A metadata table - described <a href="TBD">NEW TABLE AFTER TEST</a></li>
+<li>Feature Table - <a href="../tutorials/AG_tutorial_files/XCMS3-GNPS_AG_test_featuretable.txt">Download here</a></li>
+<li>MGF for MS/MS from above - <a href="../tutorials/AG_tutorial_files/XCMS3-GNPS_AG_test_GNPS.mgf">Download here</a></li>
+<li>A metadata table - <a href="../tutorials/AG_tutorial_files/metadata_GNPS_table_AMG_key_ones_cleaned.txt">Download here</a></li>
 </ol>
-<p>Here is an example <a href="https://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=xxxxxx">FBMN job with XCMS3</a> from a subset of the American Gut Project.</p>
+<p>Here is an example <a href="https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=f3f28a930b334dd09f310795fceae4cd">FBMN job with XCMS3</a> from a subset of the American Gut Project.</p>
 <h2 id="tutorials">Tutorials</h2>
-<p>See our <a href="tutorials/americangutxcms3">XCMS3 tutorial</a> on using Feature Based Molecular Networking for a subset of the American Gut Project sample.</p>
+<p>See our <a href="tutorials/americangutxcms3.md">XCMS3 tutorial</a> on using Feature Based Molecular Networking for a subset of the American Gut Project sample.</p>
                 
                   
                 

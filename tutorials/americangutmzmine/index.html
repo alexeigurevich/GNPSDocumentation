@@ -519,7 +519,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../featurebasedmolecularnetworking-with-mzmine2.md" title="MZmine2 Documentation" class="md-nav__link">
+    <a href="../../featurebasedmolecularnetworking-with-mzmine2/" title="MZmine2 Documentation" class="md-nav__link">
       MZmine2 Documentation
     </a>
   </li>
@@ -863,8 +863,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-availability" title="Data Availability" class="md-nav__link">
-    Data Availability
+  <a href="#data-and-files-needed-for-the-tutorial" title="Data and Files Needed for the Tutorial" class="md-nav__link">
+    Data and Files Needed for the Tutorial
   </a>
   
 </li>
@@ -1023,8 +1023,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-availability" title="Data Availability" class="md-nav__link">
-    Data Availability
+  <a href="#data-and-files-needed-for-the-tutorial" title="Data and Files Needed for the Tutorial" class="md-nav__link">
+    Data and Files Needed for the Tutorial
   </a>
   
 </li>
@@ -1074,13 +1074,43 @@
 <h2 id="learning-objectives">Learning Objectives</h2>
 <ol>
 <li>Learn how to download files from a GNPS/MassIVE Dataset.</li>
-<li>Run MZmine2 feature detection on LC-MS/MS data, and output a feature quantification table and a MS2 spectral file. <a href="https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/">See the tutorial here</a></li>
+<li>Run MZmine2 feature detection on LC-MS/MS data, and output a feature quantification table and a MS2 spectral file. <a href="../../featurebasedmolecularnetworking/">See the tutorial here</a></li>
 </ol>
 <h2 id="experimental-setup">Experimental Setup</h2>
 <p>We will use a subset of the LC-MS/MS analysis from the <a href="http://humanfoodproject.com/americangut/">American Gut Project</a>. The samples consist of fecal samples provided by participants and the subset selected consists of participants that have high and low consumption of plants. MZmine2 will be used to detect features and output a feature quantification table (CSV format) and a MS2 spectral file (MGF format). 
 The feature quantification table contains the intensity values for every aligned peak accross the samples, while the MS2 spectral file contains a single MS2 representing each aligned peak.</p>
-<h2 id="data-availability">Data Availability</h2>
-<p>LC-MS/MS data can be found in the <a href="https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=de2d18fd91804785bce8c225cc94a444">MassIVE dataset MSV000082678</a>.</p>
+<h2 id="data-and-files-needed-for-the-tutorial">Data and Files Needed for the Tutorial</h2>
+<p>LC-MS/MS data and files can be found in the <a href="https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=de2d18fd91804785bce8c225cc94a444">MassIVE dataset MSV000082678</a>, and can be retrieved from the table below:</p>
+<table>
+<thead>
+<tr>
+<th>File Type</th>
+<th>Download Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Feature quantification table (CSV format)</td>
+<td><a href="ftp://massive.ucsd.edu/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/MZmine-GNPS_AG_test_featuretable.csv">Download</a></td>
+</tr>
+<tr>
+<td>MS2 spectral file (MGF format)</td>
+<td><a href="ftp://massive.ucsd.edu/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/MZmine-GNPS_AG_test_GNPS.mgf">Download</a></td>
+</tr>
+<tr>
+<td>Study metadata (.TXT format)</td>
+<td><a href="ftp://massive.ucsd.edu/MSV000082678/other/metadata_GNPS_table_AMG_key_ones_cleaned.txt">Download</a></td>
+</tr>
+<tr>
+<td>(Optional) MZmine2 batch file (.XML format)</td>
+<td><a href="ftp://massive.ucsd.edu/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/qtof_batch_AG_training.xml">Download</a></td>
+</tr>
+<tr>
+<td>(Optional) MZmine2 project</td>
+<td><a href="ftp://massive.ucsd.edu/MSV000082678/updates/2018-08-02_lfnothias_4ee107d3/other/MZmine-GNPS_AG_test.mzmine">Download</a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="required-software-installs">Required Software Installs</h2>
 <ol>
 <li>FTP Client (e.g. WinSCP, DO NOT FileZilla!) <a href="http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/">See instructions here</a></li>
@@ -1092,7 +1122,7 @@ The feature quantification table contains the intensity values for every aligned
 <iframe width="800" height="500" src="https://www.youtube.com/embed/5jjMllbwD-U"> </iframe>
 
 <h2 id="follow-up-tutorial-in-gnps">Follow up Tutorial in GNPS</h2>
-<p>Checkout the follow up <a href="featurebasedgnps">tutorial</a> on how to take the output of MZMine2 to produce a molecular network at GNPS.</p>
+<p>Checkout the follow up <a href="../featurebasedgnps/">tutorial</a> on how to take the output of MZMine2 to produce a molecular network at GNPS.</p>
 <p>Other tutorials are available from the main [Feature Based Molecular Networking Workflow page] (../featurebasedmolecularnetworking). </p>
                 
                   
