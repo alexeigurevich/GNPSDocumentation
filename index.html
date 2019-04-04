@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
@@ -31,8 +31,8 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="./assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.9.1">
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
     
     
       
@@ -40,21 +40,50 @@
       
     
     
-      <link rel="stylesheet" href="./assets/stylesheets/application.ba0fd1a6.css">
+      <link rel="stylesheet" href="assets/stylesheets/application.3020aac5.css">
       
       
     
     
-      <script src="./assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="assets/javascripts/modernizr.01ccdecf.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="./assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-8412213-5", "ccms-ucsd.github.io")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -92,22 +121,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                GNPS Documentation
-              </span>
-              <span class="md-header-nav__topic">
-                GNPS Introduction
-              </span>
-            
+            <span class="md-header-nav__topic">
+              GNPS Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              GNPS Introduction
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -130,7 +156,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -152,11 +177,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href="." title="GNPS Documentation" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
-    </span>
+    </a>
     GNPS Documentation
   </label>
   
@@ -284,51 +309,15 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="changelog/" title="Change Log" class="md-nav__link">
-      Change Log
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="contact/" title="Contact" class="md-nav__link">
-      Contact
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="workshops/" title="GNPS Workshops" class="md-nav__link">
-      GNPS Workshops
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
     
-    <label class="md-nav__link" for="nav-10">
+    <label class="md-nav__link" for="nav-7">
       Mass Spec/Computational Background
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-10">
+      <label class="md-nav__title" for="nav-7">
         Mass Spec/Computational Background
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -358,13 +347,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
     
-    <label class="md-nav__link" for="nav-11">
+    <label class="md-nav__link" for="nav-8">
       Data Preparation/Upload
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-11">
+      <label class="md-nav__title" for="nav-8">
         Data Preparation/Upload
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -406,13 +395,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
     
-    <label class="md-nav__link" for="nav-12">
+    <label class="md-nav__link" for="nav-9">
       Recommended Data Analysis
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-12">
+      <label class="md-nav__title" for="nav-9">
         Recommended Data Analysis
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -460,8 +449,8 @@
 
 
   <li class="md-nav__item">
-    <a href="molblast/" title="Molecular BLAST (MASST) Search" class="md-nav__link">
-      Molecular BLAST (MASST) Search
+    <a href="masst/" title="MASST Search (Mass Search Tool)" class="md-nav__link">
+      MASST Search (Mass Search Tool)
     </a>
   </li>
 
@@ -490,13 +479,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
     
-    <label class="md-nav__link" for="nav-13">
+    <label class="md-nav__link" for="nav-10">
       Advanced Data Analysis
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-13">
+      <label class="md-nav__title" for="nav-10">
         Advanced Data Analysis
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -538,26 +527,21 @@
   </li>
 
         
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
+          
+          
+          
 
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-4" type="checkbox" id="nav-10-4">
     
-    <label class="md-nav__link" for="nav-14">
-      Experiment Data Analysis
+    <label class="md-nav__link" for="nav-10-4">
+      Feature Based Molecular Networking
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-14">
-        Experiment Data Analysis
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-10-4">
+        Feature Based Molecular Networking
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -568,8 +552,8 @@
 
 
   <li class="md-nav__item">
-    <a href="featurebasedmolecularnetworking/" title="Feature Based Molecular Networking" class="md-nav__link">
-      Feature Based Molecular Networking
+    <a href="featurebasedmolecularnetworking/" title="FBMN Overview" class="md-nav__link">
+      FBMN Overview
     </a>
   </li>
 
@@ -580,8 +564,85 @@
 
 
   <li class="md-nav__item">
-    <a href="ms2lda/" title="MS2LDA Deconvolution" class="md-nav__link">
-      MS2LDA Deconvolution
+    <a href="featurebasedmolecularnetworking-with-mzmine2/" title="MZmine2 Documentation" class="md-nav__link">
+      MZmine2 Documentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="featurebasedmolecularnetworking-with-ms-dial/" title="MS-DIAL Documentationn" class="md-nav__link">
+      MS-DIAL Documentationn
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="featurebasedmolecularnetworking-with-xcms3/" title="XCMS3 Documentation" class="md-nav__link">
+      XCMS3 Documentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="featurebasedmolecularnetworking-with-openms/" title="OpenMS Documentation" class="md-nav__link">
+      OpenMS Documentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="featurebasedmolecularnetworking-with-metaboscape/" title="MetaboScape Documentation" class="md-nav__link">
+      MetaboScape Documentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="featurebasedmolecularnetworking-cytoscape/" title="Cytoscape Documentation" class="md-nav__link">
+      Cytoscape Documentation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="ms2lda/" title="MS2LDA and MotifDB Substructure Discovery" class="md-nav__link">
+      MS2LDA and MotifDB Substructure Discovery
     </a>
   </li>
 
@@ -598,13 +659,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
     
-    <label class="md-nav__link" for="nav-15">
+    <label class="md-nav__link" for="nav-11">
       Community/Social Features
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-15">
+      <label class="md-nav__title" for="nav-11">
         Community/Social Features
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -617,13 +678,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-1" type="checkbox" id="nav-15-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-1" type="checkbox" id="nav-11-1">
     
-    <label class="md-nav__link" for="nav-15-1">
+    <label class="md-nav__link" for="nav-11-1">
       Spectral Libraries
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-15-1">
+      <label class="md-nav__title" for="nav-11-1">
         Spectral Libraries
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -659,6 +720,18 @@
 
 
   <li class="md-nav__item">
+    <a href="batchupload/" title="Reference Spectral Library Batch Addition" class="md-nav__link">
+      Reference Spectral Library Batch Addition
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="downloadlibraries/" title="Downloading Reference Spectral Libraries" class="md-nav__link">
       Downloading Reference Spectral Libraries
     </a>
@@ -677,13 +750,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-2" type="checkbox" id="nav-15-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-2" type="checkbox" id="nav-11-2">
     
-    <label class="md-nav__link" for="nav-15-2">
+    <label class="md-nav__link" for="nav-11-2">
       Datasets
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-15-2">
+      <label class="md-nav__title" for="nav-11-2">
         Datasets
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -766,13 +839,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-17" type="checkbox" id="nav-17">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
     
-    <label class="md-nav__link" for="nav-17">
+    <label class="md-nav__link" for="nav-13">
       Tutorial Guides
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-17">
+      <label class="md-nav__title" for="nav-13">
         Tutorial Guides
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -784,8 +857,8 @@
 
 
   <li class="md-nav__item">
-    <a href="tutorials/bacterianetworking/" title="Analog Discovery in Microbial Extracts with Molecular Networking" class="md-nav__link">
-      Analog Discovery in Microbial Extracts with Molecular Networking
+    <a href="tutorials/bacterianetworking/" title="Molecular Networking - Analog Discovery in Microbial Extracts" class="md-nav__link">
+      Molecular Networking - Analog Discovery in Microbial Extracts
     </a>
   </li>
 
@@ -796,14 +869,98 @@
 
 
   <li class="md-nav__item">
-    <a href="tutorials/americangutmzmine/" title="Microbiome Molecules in Fecal Samples in American Gut Project (Feature Based Molecular Networking)" class="md-nav__link">
-      Microbiome Molecules in Fecal Samples in American Gut Project (Feature Based Molecular Networking)
+    <a href="tutorials/americangutmzmine/" title="Feature Based Molecular Networking with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project" class="md-nav__link">
+      Feature Based Molecular Networking with MZmine2 - Microbiome Molecules in Fecal Samples in American Gut Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/featurebasedgnps/" title="Feature Based Molecular Networking - GNPS" class="md-nav__link">
+      Feature Based Molecular Networking - GNPS
     </a>
   </li>
 
         
       </ul>
     </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+    
+    <label class="md-nav__link" for="nav-14">
+      Presentation Materials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-14">
+        Presentation Materials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="logos/" title="Logos" class="md-nav__link">
+      Logos
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="changelog/" title="Change Log" class="md-nav__link">
+      Change Log
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="contact/" title="Contact" class="md-nav__link">
+      Contact
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="workshops/" title="GNPS Workshops" class="md-nav__link">
+      GNPS Workshops
+    </a>
   </li>
 
     
@@ -858,16 +1015,16 @@
               
                 
                 
-                <p><img alt="logo" src="./img/GNPS_logo_original.png" /></p>
+                <p><img alt="logo" src="/img/GNPS_logo_original.png" /></p>
 <h1 id="welcome-to-gnps">Welcome to GNPS</h1>
 <p>Global Natural Products Social Molecular Networking (GNPS) is a web-based mass spectrometry ecosystem that aims to be an open-access knowledge base for community-wide organization and sharing of raw, processed or identified tandem mass (MS/MS) spectrometry data. GNPS aids in identification and discovery throughout the entire life cycle of data; from initial data acquisition/analysis to post publication.</p>
 <p>As there are many aspects to GNPS, it can be a bit overwhelming, so the primary functionality is:</p>
 <ul>
 <li><a href="gnpsanalysisoverview/">Identification/Dereplication/Quantification</a> of MS/MS data utilizing computational tools (e.g. <a href="networking/">Molecular Networking</a>, <a href="librarysearch/">Spectral Library Search</a>, etc.)</li>
-<li>Give MS/MS spectra biological/environmental context by searching against all public MS/MS datasets (<a href="molblast/">Molecular BLAST Search</a>)</li>
+<li>Give MS/MS spectra biological/environmental context by searching against all public MS/MS datasets (<a href="masst/">MASST Search</a>)</li>
 <li><a href="spectrumcuration/">Annotate/curate identified MS/MS spectra</a> in open-access GNPS reference spectra libraries</li>
 <li>Publish entire study datasets with the Mass Spectrometry Interactive Virtual Environment (MassIVE) data repository (<a href="datasets/">Dataset Submission</a>)</li>
-<li><a href="./datasets#browsing-datasets">Browse</a> and <a href="./datasets#reanalyze-datasets">Reanalyze</a> over 700 public datasets at GNPS</li>
+<li><a href="datasets#browsing-datasets">Browse</a> and <a href="datasets#reanalyze-datasets">Reanalyze</a> over 700 public datasets at GNPS</li>
 <li>Automatic reanalysis of public datasets with automated reports of new identifications (<a href="continuousid/">Continuous Identification</a>)</li>
 <li>Explore identifications of public datasets across entire repository (<a href="moleculeexplorer/">Molecule Explorer</a>)</li>
 </ul>
@@ -956,22 +1113,15 @@ Put your MS/MS spectrum of a known compound in GNPS spectral libraries, so you n
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="./assets/javascripts/application.a59e2a89.js"></script>
+      <script src="assets/javascripts/application.dc02f8ce.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:"."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-8412213-5","ccms-ucsd.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
       
     
   </body>
