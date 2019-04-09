@@ -466,8 +466,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../dereplicator/" title="Dereplicator" class="md-nav__link">
-      Dereplicator
+    <a href="../dereplicator/" title="DEREPLICATOR" class="md-nav__link">
+      DEREPLICATOR
     </a>
   </li>
 
@@ -1154,34 +1154,64 @@
                 <h2 id="introduction">Introduction</h2>
 <p>The Feature-Based Molecular Networking (FBMN) is a computational method that bridges popular mass spectrometry data processing tools for LC-MS/MS and molecular networking analysis on <a href="http://gnps.ucsd.edu">GNPS</a>. The tools supported are: <a href="../featurebasedmolecularnetworking-with-mzmine2/">MZmine2</a>, <a href="featurebasedmolecularnetworking-with-OpenMS.md">OpenMS</a>, <a href="../featurebasedmolecularnetworking-with-ms-dial/">MS-DIAL</a>, <a href="../featurebasedmolecularnetworking-with-metaboscape/">MetaboScape</a>, and <a href="featurebasedmolecularnetworking-with-XCMS3.md">XCMS</a>.</p>
 <p>The main documentation for Feature-Based Molecular Networking <a href="../featurebasedmolecularnetworking/">can be accessed here:</a></p>
-<p>Below follows a description on how to use XCMS3 with the FBMN workflow in GNPS.</p>
+<p>Below follows a description on how to use <code>xcms</code> version &gt;= 3 (XCMS3) with the
+FBMN workflow in GNPS.</p>
 <h2 id="mass-spectrometry-processing-with-xcms3">Mass spectrometry processing with XCMS3</h2>
 <h3 id="installation">Installation</h3>
-<p>Install the latest version of XCMS3 from the [XCMS3 GitHub repository] (https://github.com/sneumann/xcms) or the [Bioconductor XCMS3 package] (https://www.bioconductor.org/packages/release/bioc/html/xcms.html).</p>
+<p>Install the latest version of XCMS3 from Bioconductor (version &gt;= 3.4) in R
+with:</p>
+<pre><code>install(&quot;BiocManager&quot;)
+BiocManager::install(&quot;xcms&quot;)
+</code></pre>
+
+<p>See also [xcms Bioconductor package] (https://www.bioconductor.org/packages/release/bioc/html/xcms.html).</p>
+<p>Clone also the github repository
+<a href="https://github.com/jorainer/xcms-gnps-tools">https://github.com/jorainer/xcms-gnps-tools</a>
+for utility functions specific to this workflow.</p>
 <h3 id="citations-and-development">Citations and development</h3>
 <p>This work builds on the efforts of our many colleagues, please cite their work:</p>
 <p><a href="https://github.com/sneumann/xcms">https://github.com/sneumann/xcms</a></p>
-<p>Benton, H.P., Wong, D.M., Trauger, S.A., Siuzdak, G. <a href="https://pubs.acs.org/doi/abs/10.1021/ac800795f">XCMS2: Processing Tandem Mass Spectrometry Data for Metabolite Identification and Structural Characterization.</a> Analytical Chemistry 80, 6382-6389 (2008).</p>
-<p>Smith, C.A., Want, E.J., O'Maille, G., Abagyan,R., Siuzdak, G. <a href="https://pubs.acs.org/doi/10.1021/ac051437y">XCMS: Processing mass spectrometry data for metabolite profiling using nonlinear peak alignment, matching and identification.</a> Analytical Chemistry, 78, 779–787 (2006).</p>
+<p>Tautenhahn R, Boettcher C, Neumann S. <a href="https://doi.org/10.1186/1471-2105-9-504">Highly sensitive feature detection for
+high resolution LC/MS</a> BMC
+Bioinformatics, 9:504 (2008).</p>
+<p>Smith, C.A., Want, E.J., O'Maille, G., Abagyan,R., Siuzdak, G. <a href="https://pubs.acs.org/doi/10.1021/ac051437y">XCMS: Processing
+mass spectrometry data for metabolite profiling using nonlinear peak alignment,
+matching and identification.</a>
+Analytical Chemistry, 78, 779–787 (2006).</p>
 <h3 id="mass-spectrometry-data-processing-with-xcms3">Mass Spectrometry Data Processing with XCMS3</h3>
-<p>As for all preprocessing software tools, a sequence of steps is performed to process mass spectrometry data in XCMS3. </p>
-<p>Here we will present key steps and representative scripts required to process untargeted LC-MS/MS data collected using data dependent acquisition. </p>
-<p><strong>SCRIPT AVAILABILITY:</strong> Example XCMS3 scripts are accessible as <em>Jupyter notebook</em> and <em>RCommander script</em> on <a href="https://github.com/DorresteinLaboratory/XCMS3_FeatureBasedMN">https://github.com/DorresteinLaboratory/XCMS3_FeatureBasedMN</a>.</p>
-<p><strong>IMPORTANT:</strong> XCMS3 parameters will vary depending on the mass spectrometer, the acquisition parameters, and the samples investigated. The following documentation serves as a basic guideline for using XCMS3 with the Feature-Based Molecular Networking workflow.</p>
-<p>Please consult these resources for more details on XCMS3 processing:</p>
+<p>As for all preprocessing software tools, a sequence of steps is performed to
+process mass spectrometry data in XCMS3.</p>
+<p>Here we will present key steps and representative scripts required to process
+untargeted LC-MS/MS data collected using data dependent acquisition.</p>
+<p><strong>SCRIPT AVAILABILITY:</strong> Example XCMS3 scripts are accessible as <em>Jupyter
+notebook</em> and <em>RCommander script</em> on
+<a href="https://github.com/DorresteinLaboratory/XCMS3_FeatureBasedMN">https://github.com/DorresteinLaboratory/XCMS3_FeatureBasedMN</a>.</p>
+<p><strong>IMPORTANT:</strong> XCMS3 parameters will vary depending on the mass spectrometer,
+the acquisition parameters, and the samples investigated. The following
+documentation serves as a basic guideline for using XCMS3 with the Feature-Based
+Molecular Networking workflow.</p>
+<p>Please consult these resources for more details on XCMS3 processing and
+definition of parameter settings:</p>
 <ul>
-<li>The official <a href="add link">XCMS3 tutorial</a>.</li>
+<li>The official <a href="https://bioconductor.org/packages/release/bioc/vignettes/xcms/inst/doc/xcms.html">XCMS3
+  tutorial</a>
+  (also provided as <code>xcms</code> vignette with the <code>xcms</code> R package).</li>
+<li>XCMS3 workshop from the Metabolomics 2018 conference:
+  <a href="https://jorainer.github.io/metabolomics2018/xcms-preprocessing.html">xcms-preprocessing</a>
+  and <a href="https://github.com/jorainer/metabolomics2018">github repository</a>.</li>
 <li>The video tutorial about <a href="tutorials/americangutxcms3.md">XCMS3 processing for Feature Based Molecular Networking</a>.</li>
 </ul>
 <h4 id="1-convert-your-lc-msms-data-to-an-open-format">1. Convert your LC-MS/MS Data to an Open Format</h4>
-<p>XCMS3 accepts different input formats. Note that we recommand to first convert your files to the mzML format before using XCMS3 for processing. <a href="../fileconversion/">See the documentation here</a>.</p>
+<p>XCMS3 accepts different input formats. Note that we recommand to first convert
+your files to the mzML format before using XCMS3 for processing. <a href="../fileconversion/">See the
+documentation here</a>.</p>
 <h4 id="2-processing-steps-with-xcms3">2. Processing Steps with XCMS3</h4>
 <ol>
-<li>Import data</li>
-<li>Peak picking</li>
-<li>Retention time alignment</li>
-<li>Peak grouping</li>
-<li>Gap filling</li>
+<li>Import data (<code>readMSData</code>)</li>
+<li>Peak picking (<code>findChromPeaks</code>)</li>
+<li>Retention time alignment (<code>adjustRtime</code>).</li>
+<li>Peak grouping (<code>groupChromPeaks</code>).</li>
+<li>Gap filling (<code>fillChromPeaks</code>).</li>
 <li>Export the data for FBMN on GNPS<ul>
 <li>a feature table with ion intensities (.TXT file format).</li>
 <li>a MS/MS spectral data file (.MGF file format).</li>
@@ -1189,10 +1219,17 @@
 </li>
 </ol>
 <h3 id="perform-the-feature-based-molecular-networking-on-gnps">Perform the Feature-Based Molecular Networking on GNPS</h3>
-<p>The files exported from XCMS3 can be uploaded to the GNPS web-platform and a Feature-Based Molecular Networking job can be launched.</p>
-<p>See that documentation for [the FTP upload] (https://ccms-ucsd.github.io/GNPSDocumentation/fileupload/) and prepare your FBMN job <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">directly on GNPS</a> (you must be logged in first).</p>
-<p>Note that you can upload a metadata table with your job. <a href="../networking/#metadata">See documentation</a>. </p>
-<p>More information on the Feature Based Molecular Networking workflow on GNPS can be obtained at <a href="../featurebasedmolecularnetworking/">this documentation page</a>.</p>
+<p>The files exported from XCMS3 can be uploaded to the GNPS web-platform and a
+Feature-Based Molecular Networking job can be launched.</p>
+<p>See that documentation for [the FTP upload]
+(https://ccms-ucsd.github.io/GNPSDocumentation/fileupload/) and prepare your
+FBMN job <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">directly on
+GNPS</a>
+(you must be logged in first).</p>
+<p>Note that you can upload a metadata table with your job. <a href="../networking/#metadata">See
+documentation</a>.</p>
+<p>More information on the Feature Based Molecular Networking workflow on GNPS can
+be obtained at <a href="../featurebasedmolecularnetworking/">this documentation page</a>.</p>
 <h3 id="representative-files-and-job">Representative files and job</h3>
 <p>Test files are accessible <a href="tutorials/AG_tutorial_files/">here</a>:</p>
 <ol>
@@ -1202,7 +1239,8 @@
 </ol>
 <p>Here is an example <a href="https://proteomics2.ucsd.edu/ProteoSAFe/status.jsp?task=f3f28a930b334dd09f310795fceae4cd">FBMN job with XCMS3</a> from a subset of the American Gut Project.</p>
 <h2 id="tutorials">Tutorials</h2>
-<p>See our <a href="tutorials/americangutxcms3.md">XCMS3 tutorial</a> on using Feature Based Molecular Networking for a subset of the American Gut Project sample.</p>
+<p>See our <a href="tutorials/americangutxcms3.md">XCMS3 tutorial</a> on using Feature Based
+Molecular Networking for a subset of the American Gut Project sample.</p>
                 
                   
                 
