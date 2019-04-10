@@ -1000,6 +1000,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#visualization-of-molecular-networks-with-cytoscape" title="Visualization of Molecular Networks with Cytoscape" class="md-nav__link">
+    Visualization of Molecular Networks with Cytoscape
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#page-contributors" title="Page contributors" class="md-nav__link">
+    Page contributors
+  </a>
+  
+</li>
+      
       
       
       
@@ -1064,6 +1078,57 @@
 <p>See the documentation to produce molecular network at GNPS with the output of the Coffee Project <a href="../../featurebasedmolecularnetworking/">here</a>.</p>
 <h2 id="run-cytoscape">Run Cytoscape</h2>
 <p>See the documentation to perform visualization of the molecular networking on the data of the Coffee Project <a href="../../featurebasedmolecularnetworking-cytoscape/">here</a>.</p>
+<h2 id="visualization-of-molecular-networks-with-cytoscape">Visualization of Molecular Networks with Cytoscape</h2>
+<ol>
+<li>Open Cytoscape 3.4 (or more recent version).</li>
+<li>Install the Cytoscape App <em>ChemViz2</em> - http://apps.cytoscape.org/apps/chemviz2.</li>
+<li>Import the molecular networking files downloaded from GNPS into Cytoscape.<ul>
+<li>Import the network topology. Go to <em>File/Import/Network/File</em> - select the .pairsinfo file in <em>networkedges_selfloop</em> folder. See documentation for more details <a href="https://bix-lab.ucsd.edu/display/Public/Cytoscape+3.4+Visualization+and+Analysis+Documentation">here</a>. </li>
+<li>Import the node information table. Go to <em>File/Import/Table/File</em> - select the .tsv file in <em>clusterinfosummarygroup_attributes_withIDs_withcomponentID</em> folder.</li>
+<li>Import the MS/MS spectral library annotation table. Go to <em>File/Import/Table/File</em> - select the .tsv file in <em>result_specnets_DB</em> folder.</li>
+<li>Import the bucket table (MS/MS only) exported from MetaboScape. Go to <em>File/Import/Table/File</em> - select the .csv file.</li>
+</ul>
+</li>
+</ol>
+<p><img alt="img" src="img/metaboscapeexportforgnps/Cyto3.PNG" />
+Figure X. Import the molecular network topology.</p>
+<p><img alt="img" src="img/metaboscapeexportforgnps/Cyto6.PNG" />
+Figure X. Node table import interface.</p>
+<ol>
+<li>Configure the Cytoscape style.<ul>
+<li>For the <em>Label</em> properties. Select the column <em>MOLECULAR_FORMULA</em> and click <em>Passthrough Mapping</em> for the mapping type.</li>
+<li>For the <em>Size</em> properties. Select the column <em>SAMPLE</em> and click <em>Continuous Mapping</em> for the mapping type.</li>
+</ul>
+</li>
+</ol>
+<p><img alt="img" src="img/metaboscapeexportforgnps/Cyto7.PNG" />
+Figure X. Configure the molecular network style.</p>
+<ol>
+<li>Visualizing the bucket table as a pie chart diagram. For the <em>Image/Chart</em> properties. Click on the <em>Def.</em> box. <ul>
+<li>Click on the <em>Charts</em> spreadsheet, and select the group for visualization.</li>
+<li>Click on the option <em>Charts/option</em> spreadsheet, and select the color-code for each group.</li>
+</ul>
+</li>
+</ol>
+<p><img alt="img" src="img/metaboscapeexportforgnps/Cyto8.PNG" />
+Figure X. Pie charts configuration. Data in <em>Image/Chart</em> properties.</p>
+<p><img alt="img" src="img/metaboscapeexportforgnps/Cyto9.PNG" />
+Figure X. Pie charts configuration. Options in <em>Image/Chart</em> properties.</p>
+<ol>
+<li>Visualize the MS/MS spectral library annotations (make sure <em>ChemViz2</em> is installed).<ul>
+<li>Select the nodes with MS/MS spectral library annotation (column LibraryID in the Cytoscape node table).</li>
+<li>Right click on the nodes and select <em>/Apps/Cheminformatics/Show compounds table</em>, or alternatively <em>/Apps/Cheminformatics/Show structures for selected nodes</em> or <em>/Apps/Cheminformatics/Paint structures for selected nodes</em>.</li>
+</ul>
+</li>
+</ol>
+<p><img alt="img" src="img/metaboscapeexportforgnps/Cyto10.PNG" />
+Figure X. Molecular networks visualization with molecular formula annotation (node name).</p>
+<p><img alt="img" src="img/metaboscapeexportforgnps/Cyto12.PNG" />
+Figure X. View of compounds structures for spectral library MS/MS annotation in the molecular networks.</p>
+<p><img alt="img" src="img/metaboscapeexportforgnps/Cyto13.PNG" />
+Figure X. Molecular networks with MS/MS spectral annotation.</p>
+<h2 id="page-contributors">Page contributors</h2>
+<p>Louis Felix Nothias (UCSD), Tam Dang (Tech. Univ. Berlin), Kevin Ngoc (UCSD).</p>
                 
                   
                 
