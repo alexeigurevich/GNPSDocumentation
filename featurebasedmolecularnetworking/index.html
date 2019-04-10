@@ -572,15 +572,30 @@
     The Feature Based Molecular Networking Workflow in GNPS
   </a>
   
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#superquick-feature-based-molecular-networking-workflow" title="SuperQuick Feature Based Molecular Networking Workflow" class="md-nav__link">
+    SuperQuick Feature Based Molecular Networking Workflow
+  </a>
+  
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#overview-of-the-feature-based-molecular-networking-workflow" title="Overview of the Feature Based Molecular Networking Workflow" class="md-nav__link">
-    Overview of the Feature Based Molecular Networking Workflow
+  <a href="#running-the-superquick-fbmn" title="Running the SuperQuick FBMN" class="md-nav__link">
+    Running the SuperQuick FBMN
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#overview-of-the-standard-feature-based-molecular-networking-workflow" title="Overview of the "standard" Feature Based Molecular Networking Workflow" class="md-nav__link">
+    Overview of the "standard" Feature Based Molecular Networking Workflow
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#select-the-software-used-for-the-lc-msms-data-processing" title="Select the software used for the LC-MS/MS data processing" class="md-nav__link">
@@ -621,6 +636,11 @@
   <a href="#advanced-quantification-options" title="Advanced quantification options" class="md-nav__link">
     Advanced quantification options
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1171,15 +1191,30 @@
     The Feature Based Molecular Networking Workflow in GNPS
   </a>
   
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#superquick-feature-based-molecular-networking-workflow" title="SuperQuick Feature Based Molecular Networking Workflow" class="md-nav__link">
+    SuperQuick Feature Based Molecular Networking Workflow
+  </a>
+  
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#overview-of-the-feature-based-molecular-networking-workflow" title="Overview of the Feature Based Molecular Networking Workflow" class="md-nav__link">
-    Overview of the Feature Based Molecular Networking Workflow
+  <a href="#running-the-superquick-fbmn" title="Running the SuperQuick FBMN" class="md-nav__link">
+    Running the SuperQuick FBMN
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#overview-of-the-standard-feature-based-molecular-networking-workflow" title="Overview of the "standard" Feature Based Molecular Networking Workflow" class="md-nav__link">
+    Overview of the "standard" Feature Based Molecular Networking Workflow
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#select-the-software-used-for-the-lc-msms-data-processing" title="Select the software used for the LC-MS/MS data processing" class="md-nav__link">
@@ -1220,6 +1255,11 @@
   <a href="#advanced-quantification-options" title="Advanced quantification options" class="md-nav__link">
     Advanced quantification options
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1324,7 +1364,7 @@
 <p>Wang, M. et al. <a href="https://doi.org/10.1038/nbt.3597">Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking</a>. Nat. Biotechnol. 34, 828–837 (2016).</p>
 <p>The citations from the mass spectrometry processing tools you used [<a href="../featurebasedmolecularnetworking-with-mzmine2/">MZmine2</a>, <a href="../featurebasedmolecularnetworking-with-openms/">OpenMS</a>, <a href="../featurebasedmolecularnetworking-with-ms-dial/">MS-DIAL</a>, <a href="../featurebasedmolecularnetworking-with-metaboscape/">MetaboScape</a>, and <a href="../featurebasedmolecularnetworking-with-xcms3/">XCMS</a>].</p>
 <h2 id="mass-spectrometry-data-processing-for-the-feature-based-molecular-networking-workflow">Mass Spectrometry Data Processing for the Feature Based Molecular Networking Workflow</h2>
-<p>In brief, mass spectrometry processing softwares have been adapted to export files that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. These softwares and their main features are presented in the table below, along with a step-by-step documentation to use for FBMN on GNPS (FBMN Documnetation):</p>
+<p>In brief, mass spectrometry processing softwares have been adapted to export two files (<em>feature quantification table</em> and <em>MS/MS spectral file</em>) that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. These softwares and their main features are presented in the table below, along with a step-by-step documentation to use for FBMN on GNPS (FBMN Documnetation):</p>
 <table>
 <thead>
 <tr>
@@ -1390,7 +1430,20 @@
 <li>The <em>MS/MS spectral file</em> with the list of MS/MS spectra for the ion features (.MGF File).</li>
 <li>[Optional] the <em>Metadata table</em> - described <a href="../networking/#metadata">here</a></li>
 </ol>
-<h4 id="overview-of-the-feature-based-molecular-networking-workflow">Overview of the Feature Based Molecular Networking Workflow</h4>
+<h2 id="superquick-feature-based-molecular-networking-workflow">SuperQuick Feature Based Molecular Networking Workflow</h2>
+<p>A simplified interace for Super Quick web interace for FBMN <a href="http://dorresteinappshub.ucsd.edu:5050/featurebasednetworking">is available here</a>.</p>
+<p><img alt="img" src="../img/featurebasedmolecularnetworking/superquick_fbmn.png" /></p>
+<h3 id="running-the-superquick-fbmn">Running the SuperQuick FBMN</h3>
+<ol>
+<li>Indicate your email and your GNPS Credentials.</li>
+<li>Select the 'Feature Generation tool'.</li>
+<li>Select the parameters preset.</li>
+<li>Drag and drop your "feature quantification table" and "MS/MS spectral file" (.MGF). See the respective documentation for FBMN each tool. </li>
+<li>Optional. Drag and drop a <a href="../networking/#metadata">metadata table</a>.</li>
+<li>Click on "Analyze Uploaded Files with GNPS Molecular Networking".</li>
+</ol>
+<p>While this SuperQuick FBMN interface is convenient for quick analysis, we recommend using the standard FBMN workflow presented below that made possible to modify all the workflow parameters.</p>
+<h3 id="overview-of-the-standard-feature-based-molecular-networking-workflow">Overview of the "standard" Feature Based Molecular Networking Workflow</h3>
 <p><img alt="img" src="../img/featurebasedmolecularnetworking/overview.png" /></p>
 <h4 id="select-the-software-used-for-the-lc-msms-data-processing">Select the software used for the LC-MS/MS data processing</h4>
 <p><img alt="img" src="../img/featurebasedmolecularnetworking/select.png" /></p>
@@ -1575,7 +1628,7 @@
 <p>Louis Felix Nothias (UCSD), Ming Wang (UCSD, Laura-Isobel McCall (University of Oklahoma), Mauricio Caravallo (UCSD)</p>
 <h2 id="to-do">TO DO</h2>
 <ul>
-<li>Provide link to [Super Quick Start Page] (superquickstart.md)</li>
+<li>here</li>
 </ul>
                 
                   
