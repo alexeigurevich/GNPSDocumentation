@@ -966,6 +966,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#metaboscape-representative-output-files" title="MetaboScape Representative Output Files" class="md-nav__link">
+    MetaboScape Representative Output Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#required-software-installations" title="Required Software Installations" class="md-nav__link">
     Required Software Installations
   </a>
@@ -973,43 +980,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#runing-metaboscape" title="Runing MetaboScape" class="md-nav__link">
-    Runing MetaboScape
+  <a href="#run-metaboscape" title="Run MetaboScape" class="md-nav__link">
+    Run MetaboScape
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#a-profile-analysis" title="A. Profile Analysis" class="md-nav__link">
-    A. Profile Analysis
+  <a href="#run-gnps" title="Run GNPS" class="md-nav__link">
+    Run GNPS
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#b-metaboscape" title="B. MetaboScape" class="md-nav__link">
-    B. MetaboScape
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#video-tutorial-run-metaboscape" title="Video Tutorial - Run MetaboScape" class="md-nav__link">
-    Video Tutorial - Run MetaboScape
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#follow-up-tutorial-in-gnps" title="Follow-up Tutorial in GNPS" class="md-nav__link">
-    Follow-up Tutorial in GNPS
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#follow-up-tutorial-for-visualization-of-molecular-networks-with-cytoscape" title="Follow-up Tutorial for Visualization of Molecular Networks with Cytoscape" class="md-nav__link">
-    Follow-up Tutorial for Visualization of Molecular Networks with Cytoscape
+  <a href="#run-cytoscape" title="Run Cytoscape" class="md-nav__link">
+    Run Cytoscape
   </a>
   
 </li>
@@ -1034,55 +1020,50 @@
                   <h1>Coffee tutorial metaboscape</h1>
                 
                 <h2 id="tutorial-using-metaboscape-and-gnps">Tutorial Using MetaboScape and GNPS</h2>
-<p>In this tutorial you will be guided into running MetaboScape for the Feature Based Molecular Network (FBMN) workflow on GNPS to reproduce some findings of the <a href="http://humanfoodproject.com/americangut/">Coffee project</a>. <em>Is there any publication to this project?</em></p>
+<p>In this tutorial you will be guided into running MetaboScape for the Feature Based Molecular Network (FBMN) workflow on GNPS to reproduce some findings of the Coffee project.</p>
 <h2 id="learning-objectives">Learning Objectives</h2>
 <ol>
-<li>Run MetaboScape feature detection on LC-MS/MS data, and output a feature quantification table and a MS2 spectral file. <a href="../../featurebasedmolecularnetworking/">See the tutorial here</a></li>
+<li>Run MetaboScape feature detection on LC-MS/MS data, and receive a feature quantification table and a MS2 spectral file as an output. <a href="../../featurebasedmolecularnetworking/">See the tutorial here</a>.</li>
 <li>Run GNPS and visualize output in Cytoscape.</li>
 </ol>
 <h2 id="experimental-setup">Experimental Setup</h2>
-<p>We will use a subset of the LC-MS/MS analysis from the Coffee project. <em>sample description</em>. MetaboScape will be used to detect features and output a feature quantification table (.csv format) and a MS2 spectral file (.mgf format). The feature quantification table contains the intensity values for every aligned peak accross the samples, while the MS2 spectral file contains a single MS2 representing each aligned peak.</p>
+<p>We will use a subset of the LC-MS/MS analysis from the Coffee project. </p>
+<p><em>Sample description still needed?</em> </p>
+<p>MetaboScape will be used to detect features and output a feature quantification table (.csv format) and a MS2 spectral file (.mgf format). The feature quantification table contains the intensity values for every aligned peak accross the samples, while the MS2 spectral file contains a single MS2 representing each aligned peak.</p>
 <h2 id="data-and-files-needed-for-the-tutorial">Data and Files Needed for the Tutorial</h2>
 <p>LC-MS/MS data and files can be found in the MassIVE dataset.</p>
+<h2 id="metaboscape-representative-output-files">MetaboScape Representative Output Files</h2>
+<p>These files are not needed for the tutorial but are provided here as reference files, or if you want to bypass the MetaboScape processing.</p>
+<table>
+<thead>
+<tr>
+<th>File Type</th>
+<th>Download Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Feature quantification table (.csv format)</td>
+<td><a href="https://github.com/lfnothias/GNPSDocumentation/blob/master/docs/tutorials/AG_tutorial_files/MetaboScape-GNPS-Coffee_Tutorial_msmsonly_featuretable.csv">Download</a></td>
+</tr>
+<tr>
+<td>MS2 spectral file (.mgf format)</td>
+<td><a href="https://github.com/lfnothias/GNPSDocumentation/blob/master/docs/tutorials/AG_tutorial_files/MetaboScape-GNPS-Coffee_Tutorial.mgf">Download</a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="required-software-installations">Required Software Installations</h2>
 <ol>
-<li>FTP Client (e.g. WinSCP, DO NOT FileZilla!) <a href="http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/">See instructions here</a>.</li>
+<li>FTP Client (e.g. WinSCP, DO NOT USE FileZilla!) <a href="http://proteomics.ucsd.edu/service/massive/documentation/submit-data/upload-data/">See instructions here</a>.</li>
 <li>MetaboScape, commercially available from Bruker. </li>
-<li><a href="http://www.cytoscape.org/download.php">Cytocape</a> for network visualization.</li>
+<li><a href="http://www.cytoscape.org/download.php">Cytoscape</a> for network visualization.</li>
 </ol>
-<h2 id="runing-metaboscape">Runing MetaboScape</h2>
-<h2 id="a-profile-analysis">A. Profile Analysis</h2>
-<ol>
-<li>Open <em>Profile Analysis</em> and process your data following <em>Profile Analysis</em> documentation to generate the Bucket Table.</li>
-<li>Define groups and/or attributes to enhance downstream data analysis (see <strong>3.3.4</strong> in <strong>MetaboScape 2.0 tutorial</strong>). The groups and/or attributes defined in <em>Profile Analysis</em> will be visualized in the molecular networks using pie chart diagram.</li>
-<li><strong>IMPORTANT</strong>: Create one common group named 'SAMPLE' for all the samples. It will be used to enhance molecular networking visualization.</li>
-<li>Export the Bucket Table to MetaboScape (see <strong>3.1</strong> in <strong>MetaboScape 2.0 tutorial documentation</strong>).</li>
-</ol>
-<h2 id="b-metaboscape">B. MetaboScape</h2>
-<ol>
-<li>Open MetaboScape 2.0.</li>
-<li>Open the project in MetaboScape (see <strong>3.7</strong> in <strong>MetaboScape 2.0 tutorial documentation</strong>).</li>
-<li>Assign MS/MS spectra to the Bucket Table (see <strong>3.7</strong> in <strong>MetaboScape 2.0 tutorial documentation</strong>).</li>
-<li>Sort buckets based on the presence of MS/MS.</li>
-<li>Select only the buckets that have MS/MS associated with.</li>
-<li>Perform <em>Automatic molecular formula generation using SmartFormula</em> (see <strong>3.11.1</strong> in <strong>MetaboScape 2.0 tutorial documentation</strong>) on these buckets. Make sure to select 'selected buckets only'.</li>
-</ol>
-<p><img alt="img" src="img/metaboscapeexportforgnps/Metabo_2.PNG" />
-Figure X. Search molecular formula with SmartFormula.</p>
-<ol>
-<li>Right-click on the Bucket Table and select <em>Export to GNPS format</em> (.mgf/.csv).</li>
-</ol>
-<p><img alt="img" src="img/metaboscapeexportforgnps/Metabo_3.png" />
-Figure X. Export MetaboScape results files for GNPS.</p>
-<p><img alt="img" src="img/metaboscapeexportforgnps/Metabo_4.PNG" />
-Figure X. Export MetaboScape result files for GNPS.</p>
-<h2 id="video-tutorial-run-metaboscape">Video Tutorial - Run MetaboScape</h2>
-<h2 id="follow-up-tutorial-in-gnps">Follow-up Tutorial in GNPS</h2>
-<p>Checkout the follow-up <a href="../featurebasedgnps/">tutorial</a> on how to take the output of MetaboScape to produce a molecular network at GNPS.</p>
-<p>Other tutorials are available from the main page of <a href="../featurebasedmolecularnetworking">Feature Based Molecular Networking Workflow</a>. </p>
-<h2 id="follow-up-tutorial-for-visualization-of-molecular-networks-with-cytoscape">Follow-up Tutorial for Visualization of Molecular Networks with Cytoscape</h2>
-<p>Checkout the follow-up <a href="featurebasedmolecularnetworking-cytoscape.md">tutorial</a> on how to visualize feature-based molecular networking with Cytoscape after running GNPS.</p>
-<p>Other tutorials are available from the main page of <a href="../featurebasedmolecularnetworking">Feature Based Molecular Networking Workflow</a>.</p>
+<h2 id="run-metaboscape">Run MetaboScape</h2>
+<p>Refer to the detailed step-by-step procedure to run Metaboscape <a href="../../featurebasedmolecularnetworking-with-metaboscape/">here</a>.</p>
+<h2 id="run-gnps">Run GNPS</h2>
+<p>See the documentation to produce molecular network at GNPS with the output of the Coffee Project <a href="../../featurebasedmolecularnetworking/">here</a>.</p>
+<h2 id="run-cytoscape">Run Cytoscape</h2>
+<p>See the documentation to perform visualization of the molecular networking on the data of the Coffee Project <a href="../../featurebasedmolecularnetworking-cytoscape/">here</a>.</p>
                 
                   
                 
